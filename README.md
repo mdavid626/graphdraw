@@ -1,5 +1,5 @@
 # GraphDraw
-WinForms .NET application for visualizing mathematical functions on a canvas. Supports function parameterization and visualization is very customizable.
+WinForms .NET application for visualizing mathematical functions on a canvas. Supports function parameterization and the visualization is very customizable.
 
 I developed this project when I was a high school student.
 
