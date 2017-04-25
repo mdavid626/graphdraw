@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B2384D4-8162-439B-8C20-BFF421812CA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GraphDraw</RootNamespace>
+    <AssemblyName>GraphDraw</AssemblyName>
+    <ManifestCertificateThumbprint>FC13BF74203A0EE4781E98C3E2D6BEE5758524F6</ManifestCertificateThumbprint>
+    <ManifestKeyFile>GraphDraw_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>E:\Documents\Desktop\new\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>gd.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <ApplicationRevision>2</ApplicationRevision>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddFunctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddFunctionForm.Designer.cs">
+      <DependentUpon>AddFunctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Annotation.cs" />
+    <Compile Include="Forms\Pickers Forms\ColorPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pickers Forms\ColorPicker.Designer.cs">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="Forms\EditFunctionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditFunctionForm.Designer.cs">
+      <DependentUpon>EditFunctionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProperty.cs" />
+    <Compile Include="FStatic.cs" />
+    <Compile Include="Function.cs" />
+    <Compile Include="FunctionSave.cs" />
+    <Compile Include="FunctionSettings.cs" />
+    <Compile Include="Forms\FunctionSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FunctionSettingsForm.Designer.cs">
+      <DependentUpon>FunctionSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FunctionsItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FunctionsItemsForm.Designer.cs">
+      <DependentUpon>FunctionsItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grid.cs" />
+    <Compile Include="Forms\InsertAnnotationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InsertAnnotationForm.Designer.cs">
+      <DependentUpon>InsertAnnotationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KeyBoardFormControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KeyBoardFormControl.Designer.cs">
+      <DependentUpon>KeyBoardFormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LineStoreGraph.cs" />
+    <Compile Include="Forms\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OpacityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OpacityForm.Designer.cs">
+      <DependentUpon>OpacityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Parameter.cs" />
+    <Compile Include="Forms\ParameterGreatScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParameterGreatScreen.Designer.cs">
+      <DependentUpon>ParameterGreatScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\About.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddFunctionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pickers Forms\ColorPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditFunctionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditFunctionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionSettingsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FunctionSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FunctionsItemsForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FunctionsItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InsertAnnotationForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InsertAnnotationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KeyBoardFormControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KeyBoardFormControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OpacityForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>OpacityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Options.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParameterGreatScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ParameterGreatScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RegisterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetGrid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetOrigoForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetOrigoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SetRangeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SetRangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Pickers Forms\ThicknessPicker.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ThicknessPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ValueOfX.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ValueOfX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\xCrossWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>xCrossWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Register.cs" />
+    <Compile Include="Forms\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveSettings.cs" />
+    <Compile Include="Forms\SetGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetGrid.Designer.cs">
+      <DependentUpon>SetGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetOrigoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetOrigoForm.Designer.cs">
+      <DependentUpon>SetOrigoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SetRangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SetRangeForm.Designer.cs">
+      <DependentUpon>SetRangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Forms\Pickers Forms\ThicknessPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Pickers Forms\ThicknessPicker.Designer.cs">
+      <DependentUpon>ThicknessPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ValueOfX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ValueOfX.Designer.cs">
+      <DependentUpon>ValueOfX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xCrossEntry.cs" />
+    <Compile Include="Forms\xCrossWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\xCrossWindow.Designer.cs">
+      <DependentUpon>xCrossWindow.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalculatorLib\CalculatorLib.csproj">
+      <Project>{CD9DF21F-6A51-4010-9F99-C4D5887012CB}</Project>
+      <Name>CalculatorLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListView\GlacialList.csproj">
+      <Project>{BF45E961-C4A7-4634-8C9C-702AA94B009A}</Project>
+      <Name>GlacialList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ParameterControlLibrary\ParameterControlLibrary.csproj">
+      <Project>{480CB5F6-3B5C-4E33-866C-BDC8BD85E82E}</Project>
+      <Name>ParameterControlLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gd.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

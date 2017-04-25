@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<Functions>
+
+	<Function>
+		<Text>sin x</Text>
+		<selected>0</selected>
+		<name>f</name>
+		<fS>
+			<Color>
+				<R>100</R>
+				<G>100</G>
+				<B>100</B>
+			</Color>
+			<Thickness>1.0</Thickness>
+			<Visible>1</Visible>
+			<Notes>ez egy sinusz fuggveny</Notes>
+			<Precisity>1</Precisity>
+			<NameDraw>0</NameDraw>
+		</fS>
+		<Parameters>
+			<Parameter>
+				<id>0</id>
+				<value>1.0</value>
+				<minValue>-10</minValue>
+				<maxValue>10</maxValue>
+				<frequency>0.01</frequency>
+			</Parameter>
+			<Parameter>
+				<id>1</id>
+				<value>1.0</value>
+				<minValue>-10</minValue>
+				<maxValue>10</maxValue>
+				<frequency>0.01</frequency>
+			</Parameter>
+		</Parameters>
+	</Function>
+
+</Functions>
